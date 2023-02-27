@@ -1,0 +1,145 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* font-family: 'Poppins', sans-serif; */
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 32px;
+}
+
+.container--header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+/* Header  */
+
+.header {
+  height: 800px;
+  padding-top: 31px;
+  padding-bottom: 100px;
+
+  background-color: #000;
+  background-image: url("./../img/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 0 0 54px 54px;
+
+  color: white;
+}
+.header a {
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  column-gap: 54px;
+}
+.nav-list__item {
+  text-transform: capitalize;
+}
+
+.nav-list__link {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.nav-list__link--active {
+  opacity: 1;
+}
+
+.user {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+}
+.user__content {
+  color: #fff;
+
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: right;
+}
+.user__greeting {
+  opacity: 0.5;
+}
+.user__name {
+  font-weight: 600;
+
+  font-size: 14px;
+  line-height: 21px;
+}
+.user__avatar {
+  position: relative;
+  height: 48px;
+  width: 48px;
+}
+.user__avatar img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.user__avatar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: block;
+  height: 12px;
+  width: 12px;
+  border-radius: 50px;
+  background-color: red;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+}
+
+.header__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  height: 72px;
+  padding: 24px;
+
+  background: #7b61ff;
+  border-radius: 12px;
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+
+  transition: 0.3s ease-in;
+}
+.button:hover {
+  background: rgb(143, 123, 244);
+}
