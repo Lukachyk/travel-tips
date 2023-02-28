@@ -7,6 +7,9 @@
     <title>Travel site</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./libs/custom-select/custom-select.css" />
+    <script defer src="./libs/custom-select/custom-select.min.js"></script>
+    <script defer src="./js/main.js"></script>
   </head>
   <body>
     <header class="header">
@@ -61,7 +64,58 @@
           </button>
         </div>
 
-        <form action="" class="header__form">FROM</form>
+        <form action="" class="header__form form">
+          <div class="form__input form__input--location">
+            <label for="location" class="label">Location</label><br />
+            <select class="select" name="" id="location">
+              <option value="all">Explore nearby destinations</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              <option value="4">Option 4</option>
+            </select>
+          </div>
+
+          <div class="form__input form__input--activity">
+            <label for="activity" class="label">Activity</label><br />
+
+            <select class="select" name="" id="activity">
+              <option value="all">All Activities</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              <option value="4">Option 4</option>
+            </select>
+          </div>
+
+          <div class="form__input form__input--when">
+            <label for="when" class="label">When</label><br />
+
+            <select class="select" name="" id="when">
+              <option value="all">Choose a Date</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              <option value="4">Option 4</option>
+            </select>
+          </div>
+
+          <div class="form__input form__input--guests">
+            <label for="guests" class="label">Activity</label><br />
+
+            <select class="select" name="" id="guests">
+              <option value="all">Guests</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              <option value="4">Option 4</option>
+            </select>
+          </div>
+
+          <button class="button-search">
+            <img src="./img/primary/system/search.svg" alt="Search" />
+          </button>
+        </form>
       </div>
     </header>
   </body>
