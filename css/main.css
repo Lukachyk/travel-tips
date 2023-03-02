@@ -39,7 +39,7 @@ body {
 
 /* уменьшаем высоту элемента и, таким образом, увеличиваем изображение при скролле вниз */
 .header--scrolled {
-  height: 700px;
+  height: 800px;
 }
 
 .header a {
@@ -65,8 +65,11 @@ body {
 .nav-list__link {
   color: #fff;
   opacity: 0.7;
+  transition: opacity 0.3s ease-in;
 }
-
+.nav-list__link:hover {
+  opacity: 1;
+}
 .nav-list__link--active {
   opacity: 1;
 }
@@ -262,6 +265,7 @@ body {
   width: 203px;
   height: 181px;
   border-radius: 12px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
 .popular__place {
@@ -305,6 +309,10 @@ body {
   border-radius: 12px;
   color: #5243c2;
   background: #f6f4ff;
+}
+.btn__view:active {
+  position: relative;
+  left: 1px;
 }
 .card-items {
   display: flex;
@@ -421,6 +429,7 @@ body {
 }
 .active-cards__item img {
   border-radius: 12px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
 .active-cards__item h3 {
   font-weight: 500;
@@ -560,6 +569,15 @@ body {
 .form-btn {
   background: #7b61ff;
   border-radius: 12px;
+  transition: 0.3s ease-in;
+}
+
+.form-btn:hover {
+  background: #472cd0;
+}
+.form-btn:active {
+  position: relative;
+  left: 1px;
 }
 .form-btn img {
   padding: 28px;
